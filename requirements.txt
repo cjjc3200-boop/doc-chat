@@ -1,0 +1,9 @@
+# Core RAG stack — all runs locally, no API key needed to start
+fastembed>=0.3.0      # local ONNX embeddings (lightweight, no PyTorch)
+numpy>=1.24           # we store vectors here and compute cosine similarity by hand
+
+# Optional: enable PDF ingestion
+pypdf>=4.0            # pip install pypdf  (only needed if your docs/ has PDFs)
+
+# Optional: enable LLM answer synthesis (works with OpenAI or a local Ollama)
+# openai>=1.30        # pip install openai  (only needed for --llm mode)
